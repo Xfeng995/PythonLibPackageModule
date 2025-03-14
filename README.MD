@@ -19,8 +19,6 @@ from my_package import function_a, function_b
 function_a()
 function_b()
 
-from .module_a import function_a
-from .module_b import function_b
 ~~~
 # 执行初始化代码
 
