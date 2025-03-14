@@ -25,6 +25,7 @@ from .module_b import function_b
 # 执行初始化代码
 
 假设我们有个需求,每次导入包时都要初始化一个数据库连接,可以在__init__.py中加入初始化代码:
+
 文件__init__.py
 ~~~
 def init_db():
