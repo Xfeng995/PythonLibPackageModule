@@ -3,6 +3,10 @@ from weather_tool import fetcher
 from weather_tool import parser
 from weather_tool import formatter
 from weather_tool import fetchercitycode
+import warnings
+from urllib3.exceptions import NotOpenSSLWarning
+warnings.filterwarnings("ignore", category=NotOpenSSLWarning)
+
 
 if len(sys.argv) != 2:
     print("Usage: python getweather.py <city>")
